@@ -1,0 +1,11 @@
+version: '3.8'
+
+services: 
+    web:
+        build: 
+            context: .
+            dockerfile: dockerfile
+        image: spring-boot-jmx:1.0.3
+        container_name: spring-boot-jmx
+        ports: 
+            - "5000:5000"
